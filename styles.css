@@ -1,0 +1,95 @@
+/***********Custom Properties******/
+:root{
+--first-color:#407C9D;
+--first-alpha-color: rgba(149, 214, 251, 0.75); 
+--white-color:#FFFFFF;
+--white-gray-color:#A8A8A8;
+--gray-black-color:#626262;
+--black-color:#000000;
+--font:"Raleway",sans-serif;
+--max-width:120px;
+--header-height:4rem;
+}
+
+/***************Reset**************/
+html{
+    box-sizing: border-box;
+    font-family: var(--font);
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0%;
+    overflow-x: hidden;
+    color:var(--text-color);
+}
+
+/*---------------*/
+a{
+    color:var(--link-color);
+    transition: all 0,5s ease-out;
+}
+
+:hover{
+ opacity: 0,75;
+}
+
+h1{
+    margin: 0;
+    font-size: 2rem;
+}
+
+h2{
+    margin: 0;
+    font-size: 1,5rem;
+}
+
+h3{
+    margin: 0;
+    font-size: 1rem;
+}
+
+h4{
+    margin: 0;
+    font-size: 1rem;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+P{
+    line-height: 1,6;
+}
+
+/*************Components***********/
+
+/**************Utilities***********/
+.box-shadow-1{
+    box-shadow: 0.313rem 0.313rem 0.313rem rgba(0, 0, 0, 0.25);
+}
+.container{
+    margin: auto;
+    margin-right: auto;
+
+}  
+ 
+
+/*************Siti Style***********/
+.header{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 999;
+    width: 100%;
+    height: var(--header-height);
+    
+}
