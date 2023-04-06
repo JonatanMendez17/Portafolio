@@ -114,7 +114,7 @@ P{
     width: 1122px;
     height: 400px;
     left: 80px;
-    top: 1701px;
+    top: 1750px;
 }
 
 .Barra_3{
@@ -140,8 +140,10 @@ P{
     width: 1122px;
     height: 400px;
     left: 80px;
-    top: 2000px;
+    top: 2150px;
 }
+
+
 
 .Contact{
     background-color: #407C9D;
@@ -211,7 +213,7 @@ P{
 
 .Cuadro_comtacto_general{
     width: 100px;
-    height: 100px;
+    height: 150px;
     }
 
 .Nombre_Correo{
@@ -280,4 +282,78 @@ P{
     background: #638fa7;
     border-radius: 10px;
     
+}
+
+.Yo{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 29px;
+    left: 843px;
+    border-radius: 100%;
+}
+
+.Texto_SobreMi{
+    width: 50px;
+    width: 800px;
+}
+
+.cuadro_indra{
+    width: 1118px;
+    height: 151px;
+    background-color: #407C9D;
+    border-radius: 20px;
+}
+.cuadro_I2T{
+    width: 1118px;
+    height: 200px;
+    background-color: #407C9D;
+    border-radius: 20px;
+}
+
+.cuadro_2D{
+    width: 1118px;
+    height: 151px;
+    background-color: #407C9D;
+    border-radius: 20px;
+}
+
+.Titulo_exp{
+    position: relative;
+    top: 13px;
+    left: 20px;
+    color: beige;
+}
+
+.Texto_exp{
+    width: 1076px;
+    text-align: justify;
+    position: relative;
+    top: 1px;
+    left: 20px;
+    color: white;
+}
+
+.Iconos{
+    display: grid;
+    grid-template-columns: 13rem 13rem 13rem 13rem;
+    grid-template-rows: 14rem 14rem;
+    column-gap: 2rem;
+    padding: 0;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.diseño{
+    background-color: var(--eerie-black);
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    filter: saturate(40%);
+    width: 13rem;
+    height: 14rem;
+    background-color: rgba(0, 0, 0, 0.479);
 }
