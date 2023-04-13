@@ -24,18 +24,21 @@ body{
     right: 417px;
     font-size: 80px;
     text-align: center;
+    text-shadow: 0px 0px 11px rgb(255, 255, 255);;
 
 }
 
 .Detalle{
     position: absolute;
     top: 326px;
-    bottom: auto;
+    left: 317px;
     right: 460px;
+    color: black
 }
 
 a{
     color: #ffffff;
+    font-size: 20px;
     transition: all 0,5s ease-out;
     text-decoration: none;
 }
@@ -47,6 +50,8 @@ a{
 img{
     max-width: 100%;
     height: 100%;
+    position: absolute;
+    top: -45px;
 }
 
 P{
@@ -60,17 +65,36 @@ P{
     margin: auto;
     margin-right: auto;
     background-color: #407C9D;
-    width: 452px;
+    height: 29px;
+    width: 525px;
     text-align: center;
-    border-radius: 7px;
-
+    border-radius: 6px;
+    border-style: solid; 
+    border-color: #356079;
 }  
  
+.menu{
+    height: 20px;
+    width: 500px;
+    position: fixed;
+    top: 75px;
+    left: 695px;
+    right: 20px;
+    bottom: 20px;
+    text-align: justify;
+
+}
+
+.Portada{
+    width: 50px;
+    height: 50px;
+}
+
 .header{
     position: fixed;
     height: 26.67px;
     left: 643px;
-    right: 77px;
+    right: 111px;
     top: 69px;
     
 }
@@ -140,7 +164,7 @@ P{
     width: 1122px;
     height: 400px;
     left: 80px;
-    top: 2150px;
+    top: 2236px;
 }
 
 
@@ -155,23 +179,46 @@ P{
         border-radius: 30px;
 }
 
+h3{
+    position: relative;
+    top: 190px;
+    left: 50px;
+    color: white;
+}
+
+
+.Marco_proyecto{
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(4, 280px);
+    grid-template-rows: 8rem 9rem;
+    column-gap: -5rem;
+    padding: 0;
+    margin-top: 3rem;
+    justify-content: center;
+    align-items: start;
+    justify-items: center;
+}
+
 .Barra_5{
     position: absolute;
     width: 1122px;
     height: 8.06px;
     left: 76px;
-    top: 2445px;
+    top: 2681px;
     background: #407C9D;
 }
+
 .Cuadro_contacto{
     background-color: #407C9D;
     position: absolute;
     width: 1122px;
     height: 444px;
     left: 80px;
-    top: 2500px;
+    top: 2726px;
     border-radius: 30px;
 }
+
 .Titulo_Contacto{
     color: #ffffff;
     position: absolute;
@@ -204,11 +251,12 @@ P{
 }
 .footer{
     width: 100%;
-    height: 26px;
+    height: 80px;
     position: relative;
-    top: 2121px;
-    background-color: rgba(79, 79, 79, 0.076);
+    top: 3000px;
+    background-color: rgba(0, 0, 0, 0.384);
     text-align: center;
+    padding-top: 20px;  
     }
 
 .Cuadro_comtacto_general{
@@ -336,13 +384,24 @@ P{
 
 .Iconos{
     display: grid;
-    grid-template-columns: 13rem 13rem 13rem 13rem;
-    grid-template-rows: 14rem 14rem;
-    column-gap: 2rem;
+    grid-gap: 0px;
+    grid-template-columns: repeat(8, 140px);
+    grid-template-rows: 8rem 8rem 8rem;
+    column-gap: -5rem;
     padding: 0;
-    margin-top: 2rem;
+    margin-top: 3rem;
     justify-content: center;
+    align-items: center;
+    justify-items: center;
 }
+
+.Img_Portada{
+    width: 100%;
+    height: 746px;
+    position: absolute;
+    top: 0px;
+}
+
 
 .diseño{
     background-color: var(--eerie-black);
@@ -353,7 +412,30 @@ P{
     justify-content: center;
     text-align: center;
     filter: saturate(40%);
-    width: 13rem;
-    height: 14rem;
-    background-color: rgba(0, 0, 0, 0.479);
+    width: 6rem;
+    height: 4rem;
+}
+
+.Proyecto_1{
+    width: 200px;
+    height: 250px;
+    background-color: #407C9D;
+}
+
+.Proyecto_2{
+    width: 200px;
+    height: 250px;
+    background-color: #407C9D;
+}
+
+.Proyecto_3{
+    width: 200px;
+    height: 250px;
+    background-color: #407C9D;
+}
+
+.Proyecto_4{
+    width: 200px;
+    height: 250px;
+    background-color: #407C9D;
 }
