@@ -15,14 +15,6 @@ body{
     overflow-x: hidden;
 }
 
-.header{
-    position: fixed;
-    height: 26.67px;
-    left: 643px;
-    right: 111px;
-    top: 69px;
-}
-
 P{
     line-height: 1,6;
 }
@@ -59,6 +51,13 @@ h3{
 
 
 /*MENU NAVEGACION*/
+.header{
+    position: fixed;
+    height: 26.67px;
+    left: 621px;
+    right: 175px;
+    top: 69px;
+}
 .Contenedor{
     margin: auto;
     margin-right: auto;
@@ -67,19 +66,20 @@ h3{
     width: 580px;
     text-align: center;
     border-radius: 14px;
+    box-shadow: 6px 4px 18px 1px;
 }  
 .Menu{
     height: 34px;
     width: 565px;
     position: fixed;
     top: 70px;
-    left: 660px;
+    left: 628px;
     right: 20px;
     bottom: 0px;
     text-align: center;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 
 }
 a{
@@ -88,9 +88,6 @@ a{
     transition: all 0,5s ease-out;
     text-decoration: none;
 }
-
-
-
 
 
 
@@ -240,8 +237,8 @@ a{
 .Titulo_exp{
     position: relative;
     top: 13px;
-    left: 20px;
-    color: beige;
+    left: 55px;
+    color: white;
 }
 .Texto_exp{
     width: 1076px;
@@ -381,7 +378,30 @@ a{
     background-color: #407C9D;
     border-radius: 15px;
 }
-
+.Portafolio-work1{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 77px;
+    left: 19px;
+    display: grid;s
+}
+.Portafolio-work2{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 248px;
+    left: 19px;
+    display: grid;s
+}
+.Portafolio-work3{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 466px;
+    left: 19px;
+    display: grid;s
+}
 
 
 
@@ -514,10 +534,15 @@ a{
             position: absolute;
             top: 390px;
             left: 925px;
-            background: #638fa7;
-            border-radius: 10px;  
+            border-radius: 10px; 
+            background-color: #608397; 
             }
-
+            @media (hover: hover){
+            .Enviar:hover{
+                color: rgb(0, 0, 0);
+                background-color: #86b2cc; 
+                }
+            }
 
 
 
