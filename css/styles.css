@@ -53,35 +53,29 @@ h3{
 
 
 /*MENU NAVEGACION*/
-.header{
+.Contenedor-Menu{
     position: fixed;
-    height: 26.67px;
-    left: 621px;
-    right: 175px;
-    top: 69px;
-}
-.Contenedor{
-    margin: auto;
-    margin-right: auto;
     background-color: #407C9D;
     height: 35px;
-    width: 580px;
+    width: 600px;
     text-align: center;
-    border-radius: 14px;
+    border-radius: 20px;
     box-shadow: 6px 4px 18px 1px;
-}  
+    margin: -385px 598px 80px
+}
+
 .Menu{
     height: 34px;
-    width: 565px;
-    position: fixed;
+    width: 600px;
+    position: initial;
     top: 70px;
     left: 628px;
     right: 20px;
     bottom: 0px;
     text-align: center;
     display: flex;
-    align-items: center;
     justify-content: space-evenly;
+    align-items: center;
 
 }
 a{
@@ -98,58 +92,56 @@ a{
 
 
 /*PORTADA*/
-.Portada{
-    width: 50px;
-    height: 50px;
+.Cuadro-Titulo{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
 }
+.Titulo-Principal{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .Img_Portada{
     width: 100%;
     height:auto;
     position: absolute;
-    top: 0px;
 }
 .hola-soy{
-    position: absolute;
-    top: 207px;
-    right: 937px;
+    position: relative;
     color: white;
-    font-size: 25px;
-    text-align: center;
     text-shadow: 0px 0px 11px rgb(0, 0, 0);
-}
+    margin: 0px 559px 0px 0px;}
 .Jonatan-Mendez{
-    position: absolute;
-    top: 197px;
-    right: 388px;
+    position: relative;
     color: white;
     font-size: 85px;
-    text-align: center;
     text-shadow: 0px 0px 11px rgb(0, 0, 0);
+    margin: auto;
 
 }
 .Info{
-    position: absolute;
-    top: 326px;
-    left: 309px;
-    right: 380px;
+    position: relative;
     color: rgb(255, 255, 255);
     font-size: 21px;
     text-shadow: 0px 0px 11px rgb(0, 0, 0);
+    margin: 0px 10px 0px 0px;
 }
 
     /*Redes De Contacto*/
-    .iconos-redes{
-        width: 243px;
-        height: 65px;
-        background-color: #f8f8f870;
-        border-radius: 30px;
+    .Cuadro-Redes{
+        justify-content: center;
         display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        position: absolute;
-        left: 725px;
-        bottom: 183px;
+        height: 18vh;
+        margin: -60px 0px 0px 440px; 
+    }
 
+    .iconos-redes{
+        display: flex;
 
     }
      .i_Linkedin{
@@ -415,16 +407,17 @@ a{
 
 /*CONTACTO*/
 .Barra_5{
-    position: absolute;
+    position: relative;
     width: 1122px;
-    height: 8.06px;
-    left: 76px;
-    top: 2681px;
+    height: 8px;
     background: #407C9D;
 }
 .Contenedor-contacto{
-    width: 100px;
-    height: 150px;
+    bottom: 226px;
+    width: 1162px;
+    height: 392px;
+    position: absolute;
+    top: 2645px;
     }
 .Contacto{
     background-color: #407C9D;
@@ -438,13 +431,11 @@ a{
 
     /*Cuadro De Contacto*/
     .Cuadro_contacto{
-            background-color: #407C9D;
-            position: absolute;
-            width: 1122px;
-            height: 444px;
-            left: 80px;
-            top: 2726px;
-            border-radius: 30px;
+        background-color: #407C9D;
+        position: relative;
+        width: 1122px;
+        height: 354px;
+        border-radius: 30px;
     }
     .Titulo_Contacto{
             color: #ffffff;
