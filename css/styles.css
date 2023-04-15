@@ -25,13 +25,6 @@ P{
     opacity: 0,75;
 }
    
-img{
-       max-width: 100%;
-       height: 100%;
-       position: absolute;
-       top: -45px;
-}
-   
 .box-shadow-1{
        box-shadow: 0.313rem 0.313rem 0.313rem rgba(0, 0, 0, 0.25);
 }
@@ -107,8 +100,8 @@ a{
 }
 
 .Img_Portada{
-    width: 100%;
-    height:auto;
+    width: auto;
+    height: 100%;
     position: absolute;
 }
 .hola-soy{
@@ -133,16 +126,9 @@ a{
 }
 
     /*Redes De Contacto*/
-    .Cuadro-Redes{
-        justify-content: center;
-        display: flex;
-        height: 18vh;
-        margin: -60px 0px 0px 440px; 
-    }
-
     .iconos-redes{
-        display: flex;
-
+        position: relative;
+        margin: 20px 0px 0px 440px;
     }
      .i_Linkedin{
                 width: 50px;
@@ -175,32 +161,43 @@ a{
 
 
 /*SOBRE MI*/
+.Contenedor-SobreMi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin: 100px 200px 0px; */
+    justify-content: center;
+    width: 1400px;
+}
+
 .Barra_1{
-    position: absolute;
+    position: relative;
     width: 1122px;
     height: 8.06px;
-    left: 0px;
-    top: 0px;
+    /* left: 0px; */
+    /* top: 0px; */
     background: #407C9D;
 }
 .Sobre-Mi{
-    position: absolute;
-    width: 1122px;
-    height: 300px;
-    left: 80px;
-    top: 798.64px;
+    /* position: relative; */
+    /* width: 1122px; */
+    /* height: 300px; */
+    /* left: 80px; */
+    /* top: 798.64px; */
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 3rem;
+    align-items: center;
+    justify-content: center;
 }
+
 .Mi-Foto{
     width: 250px;
-    height: 250px;
-    position: absolute;
-    top: 29px;
-    left: 843px;
+    max-width: 208px;
     border-radius: 100%;
 }
 .Texto_SobreMi{
-    width: 50px;
-    width: 800px;
+    text-align: left;
 }
 
 
@@ -378,7 +375,7 @@ a{
     position: absolute;
     top: 77px;
     left: 19px;
-    display: grid;s
+    display: grid;
 }
 .Portafolio-work2{
     width: 30px;
@@ -386,7 +383,7 @@ a{
     position: absolute;
     top: 248px;
     left: 19px;
-    display: grid;s
+    display: grid;
 }
 .Portafolio-work3{
     width: 30px;
@@ -394,7 +391,7 @@ a{
     position: absolute;
     top: 466px;
     left: 19px;
-    display: grid;s
+    display: grid;
 }
 
 
