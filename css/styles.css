@@ -32,11 +32,15 @@ P{
        box-shadow: 0.313rem 0.313rem 0.313rem rgba(0, 0, 0, 0.25);
 }
 
-h3{
+/* h3{
     position: relative;
     top: 190px;
     left: 50px;
     color: white;
+} */
+
+h4{
+    margin: 0px;
 }
 
 
@@ -101,7 +105,6 @@ a{
     flex-direction: column;
     justify-content: center;
 }
-
 .Img_Portada{
     width: auto;
     height: 100%;
@@ -170,15 +173,15 @@ a{
     align-items: center;
     /* margin: 100px 200px 0px; */
     justify-content: center;
-    width: 1400px;
+    padding: 50px 0px;
 }
 
 .Barra_1{
-    position: relative;
+    position: initial;
     width: 1122px;
     height: 8.06px;
     /* left: 0px; */
-    top: 70px;
+    /* top: 70px; */
     background: #407C9D;
 }
 .Sobre-Mi{
@@ -187,7 +190,7 @@ a{
     height: 300px;
     display: flex;
     flex-direction: row-reverse;
-    padding: 3rem;
+    /* padding: 3rem; */
     align-items: center;
     justify-content: center;
 }
@@ -225,10 +228,9 @@ a{
     width: 1122px;
     height: 600px;
     display: flex;
-    /* left: 80px; */
-    /* top: 1100px; */
     flex-wrap: wrap;
     align-items: center;
+    padding: 50px 0px;
 }
 .Titulo_exp{
     position: initial;
@@ -303,7 +305,7 @@ a{
 
 /*TECNOLOGIA*/
 .Barra_3{
-    position: absolute;
+    position: initial;
     width: 1122px;
     height: 8.06px;
     left: 0px;
@@ -311,35 +313,22 @@ a{
     background: #407C9D;
 }
 .Tecnologias{
-    position: absolute;
-    width: 1122px;
-    height: 400px;
-    left: 80px;
-    top: 1750px;
+    position: initial;
+    padding: 50px 0px;
 }
 .Iconos{
     display: grid;
-    grid-gap: 0px;
     grid-template-columns: repeat(8, 140px);
-    grid-template-rows: 8rem 8rem 8rem;
+    grid-template-rows: 10rem 8rem 10rem;
     column-gap: -5rem;
-    padding: 0;
-    margin-top: 3rem;
     justify-content: center;
-    align-items: center;
-    justify-items: center;
 }
 .Diseño{
     background-color: var(--eerie-black);
-    border-radius: 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    filter: saturate(40%);
-    width: 6rem;
-    height: 4rem;
 }
 
 
@@ -353,55 +342,29 @@ a{
 
 /*PROYECTOS*/
 .Barra_4{
-    position: absolute;
-    width: 1122px;
+    position: initial;
     height: 8.06px;
     left: 0px;
     top: 0px;
     background: #407C9D;
 }
 .Proyectos{
-    position: absolute;
-    width: 1122px;
-    height: 400px;
-    left: 80px;
-    top: 2236px;
+    position: initial;
 }
 .Marco_proyecto{
     display: grid;
-    grid-gap: 1px;
     grid-template-columns: repeat(4, 280px);
-    grid-template-rows: 8rem 9rem;
     column-gap: -5rem;
-    padding: 0;
-    margin-top: 3rem;
-    justify-content: center;
-    align-items: start;
+ 
     justify-items: center;
 }
-.Proyecto_1{
+.Pre-Proyecto{
     width: 200px;
     height: 250px;
     background-color: #407C9D;
     border-radius: 15px;
-}
-.Proyecto_2{
-    width: 200px;
-    height: 250px;
-    background-color: #407C9D;
-    border-radius: 15px;
-}
-.Proyecto_3{
-    width: 200px;
-    height: 250px;
-    background-color: #407C9D;
-    border-radius: 15px;
-}
-.Proyecto_4{
-    width: 200px;
-    height: 250px;
-    background-color: #407C9D;
-    border-radius: 15px;
+    text-align: center;
+    color: white;
 }
 
 
@@ -421,11 +384,7 @@ a{
     background: #407C9D;
 }
 .Contenedor-contacto{
-    bottom: 226px;
-    width: 1162px;
-    height: 392px;
-    position: absolute;
-    top: 2645px;
+   position: initial;
     }
 .Contacto{
     background-color: #407C9D;
@@ -438,94 +397,91 @@ a{
 }
 
     /*Cuadro De Contacto*/
+    .Contenedor-Accion{
+        
+    }
+
     .Cuadro_contacto{
         background-color: #407C9D;
-        position: relative;
-        width: 1122px;
-        height: 354px;
+        /* position: initial; */
+        /* width: 1122px; */
+        /* height: 354px; */
         border-radius: 30px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding: 15px;
     }
     .Titulo_Contacto{
             color: #ffffff;
-            position: absolute;
-            left: 20px;
+            position: initial;
+            /* left: 20px; */
     }
 
         /*Cuadro De Nombre*/
         .Cuadro_Nombre{
-                width: 383px;
-                height: 35px;
-                position: absolute;
-                top: 115px;
-                left: 683px;
-                background-color: #ffffff;
-                border-radius: 10px;
+            width: 400px;
+            position: initial;
+            background-color: #ffffff;
+            border-radius: 20px;
+        
         }
         .Nombre_Contact{
-                height: 10px;
-                position: absolute;
-                top: 74px;
-                left: 684px;
-                color: #ffffff;
+            /* height: 10px; */
+            position: initial;
+            /* top: 74px; */
+            /* left: 684px; */
+            color: #ffffff;
         }
 
         /*Cuadro De Usuario*/
         .Usuario{
-            height: 10px;
-            position: absolute;
-            left: 5px;
-            top: -7px;
+            /* height: 10px; */
+            position: initial;
             color: rgb(172, 172, 172);
+            margin: 0px;
+            padding: 10px;
         }
 
         /*Cuadro De Correo*/
         .Cuadro_Correo{
-            width: 383px;
-            height: 35px;
-            position: absolute;
-            top: 185px;
-            left: 683px;
+            width: 400px;
+            position: initial;
             background-color: #ffffff;
-            border-radius: 10px;
+            border-radius: 20px;
         }
         .Correo{
-            height: 30px;
-            position: absolute;
-            left: 5px;
-            top: -7px;
-            color: rgb(172, 172, 172);
+        position: initial;
+        color: rgb(172, 172, 172);
+        margin: 0px;
+        padding: 10px;
         }
         .Nombre_Correo{
-            height: 20px;
-            position: absolute;
-            top: 144px;
-            left: 684px;
-            color: #ffffff;
+                /* height: 20px; */
+                position: initial;
+                /* top: 144px; */
+                /* left: 684px; */
+                color: #ffffff;
         }
         
         /*Cuadro De Mensaje*/
         .Cuadro_Mensaje{
-            width: 383px;
-            height: 121px;
-            position: absolute;
-            top: 252px;
-            left: 683px;
+            width: 400px;
+            height: 150px;
+            position: initial;
             background-color: #ffffff;
-            border-radius: 10px;
+            border-radius: 20px;
         }
         .Mensaje{
-            height: 30px;
-            position: absolute;
-            top: 212px;
-            left: 684px;
+            position: initial;
             color: #ffffff;
         }
         .Texto_mensaje{
             height: 30px;
-            position: absolute;
-            left: 5px;
-            top: -7px;
+            position: initial;
             color: rgb(172, 172, 172);
+            padding: 0px 10px;
         }
 
             /*Boton Enviar*/
