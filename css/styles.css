@@ -32,13 +32,6 @@ P{
        box-shadow: 0.313rem 0.313rem 0.313rem rgba(0, 0, 0, 0.25);
 }
 
-/* h3{
-    position: relative;
-    top: 190px;
-    left: 50px;
-    color: white;
-} */
-
 h4{
     margin: 0px;
 }
@@ -61,22 +54,15 @@ h4{
     text-align: center;
     border-radius: 20px;
     box-shadow: 6px 4px 18px 1px;
-    margin: -385px 598px 80px
+    margin: 40px 0px 0px 500px;
 }
-
 .Menu{
     height: 34px;
     width: 600px;
     position: initial;
-    top: 70px;
-    left: 628px;
-    right: 20px;
-    bottom: 0px;
-    text-align: center;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-
 }
 a{
     color: #ffffff;
@@ -84,6 +70,9 @@ a{
     transition: all 0,5s ease-out;
     text-decoration: none;
 }
+
+
+
 
 
 
@@ -106,7 +95,8 @@ a{
     justify-content: center;
 }
 .Img_Portada{
-    width: auto;
+    width: 100%;
+    min-width: 1200px;
     height: 100%;
     position: absolute;
 }
@@ -175,7 +165,6 @@ a{
     justify-content: center;
     padding: 50px 0px;
 }
-
 .Barra_1{
     position: initial;
     width: 1122px;
@@ -194,7 +183,6 @@ a{
     align-items: center;
     justify-content: center;
 }
-
 .Mi-Foto{
     width: 250px;
     max-width: 208px;
@@ -250,6 +238,7 @@ a{
     display: flex;
     flex-direction: column;
     padding: 15px;
+    margin: 10px 0px 10px 0px;
 }
 .Sub-Titulo{
     display: flex;
@@ -294,6 +283,7 @@ a{
     left: 19px;
     display: grid;
 }
+
 
 
 
@@ -350,6 +340,7 @@ a{
 }
 .Proyectos{
     position: initial;
+    padding: 20px 0px;
 }
 .Marco_proyecto{
     display: grid;
@@ -382,10 +373,11 @@ a{
     width: 1122px;
     height: 8px;
     background: #407C9D;
+    margin: 40px 0px;
 }
 .Contenedor-contacto{
    position: initial;
-    }
+}
 .Contacto{
     background-color: #407C9D;
     position: absolute;
@@ -395,28 +387,34 @@ a{
     top: 2700px;
     border-radius: 30px;
 }
+.Img-Contacto{
+    width: 550px;
+    height: 330px;
+    padding: 50px 50px;
+}
 
     /*Cuadro De Contacto*/
     .Contenedor-Accion{
-        
+        padding: 60px 20px 20px 20px;
+        display: flex;
+        flex-direction: column;
+        height: 410px;
+        justify-content: space-evenly;
     }
-
     .Cuadro_contacto{
         background-color: #407C9D;
-        /* position: initial; */
-        /* width: 1122px; */
-        /* height: 354px; */
         border-radius: 30px;
         display: flex;
         justify-content: space-between;
         flex-direction: row;
         flex-wrap: nowrap;
         padding: 15px;
+        margin: 30px 0px 0px 0px;
     }
     .Titulo_Contacto{
             color: #ffffff;
             position: initial;
-            /* left: 20px; */
+            margin: 0px;
     }
 
         /*Cuadro De Nombre*/
@@ -486,13 +484,12 @@ a{
 
             /*Boton Enviar*/
             .Enviar{
-            height: 34px;
-            width: 143px;
-            position: absolute;
-            top: 390px;
-            left: 925px;
-            border-radius: 10px; 
-            background-color: #608397; 
+                height: 40px;
+                width: 150px;
+                position: initial;
+                border-radius: 30px;
+                background-color: #608397;
+                margin: 0px 0px 0px 250px;
             }
             @media (hover: hover){
             .Enviar:hover{
@@ -509,13 +506,15 @@ a{
 
 
 
+
 /*FOOTER - PIE DE PAGINA*/
 .footer{
     width: 100%;
-    height: 80px;
+    height: 200px;
     position: relative;
-    top: 3000px;
-    background-color: rgba(0, 0, 0, 0.384);
+    background-color: #407C9D;
+    color: white;
     text-align: center;
-    padding-top: 20px;  
-    }
+    padding: 10px;
+    margin: 50px 0px;
+}
