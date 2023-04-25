@@ -8,6 +8,7 @@ html{
     box-sizing: border-box;
     font-family: var(--font);
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -48,12 +49,12 @@ h4{
 /*MENU NAVEGACION*/
 .Contenedor-Menu{
     position: fixed;
-    background-color: #407C9D;
+    background-color: #323B5A;
     height: 35px;
     width: 600px;
     text-align: center;
     border-radius: 20px;
-    box-shadow: 6px 4px 18px 1px;
+    box-shadow: 0px 0px 0px 1px white; 
     margin: 40px 0px 0px 500px;
 }
 .Menu{
@@ -64,12 +65,18 @@ h4{
     justify-content: space-evenly;
     align-items: center;
 }
+.Logo{
+    height: 30px;
+}
 a{
     color: #ffffff;
     font-size: 20px;
     transition: all 0,5s ease-out;
     text-decoration: none;
 }
+    a:hover {
+        color: #9768BB
+    }
 
 
 
@@ -161,17 +168,17 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* margin: 100px 200px 0px; */
     justify-content: center;
-    padding: 50px 0px;
+    padding: 50px 0px 0px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
 }
 .Barra_1{
     position: initial;
     width: 1122px;
     height: 8.06px;
-    /* left: 0px; */
-    /* top: 70px; */
-    background: #407C9D;
+    background: #323B5A;
 }
 .Sobre-Mi{
     position: relative;
@@ -187,12 +194,30 @@ a{
     width: 250px;
     max-width: 208px;
     border-radius: 100%;
+    padding: 49px 0px 0px 0px;
 }
 .Texto_SobreMi{
     text-align: justify;
     padding: 0px 20px 0px 0px;
 }
-
+.Boton-imagen{
+    text-align: center;
+}
+.Des-cv{
+    height: 30px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: #9768BB;
+    color: #ffffff;
+    margin: 10px 0px 0px 0px;
+}   
+@media (hover: hover){
+    .Des-cv:hover{
+        color: rgb(0, 0, 0);
+        background-color: #15a5a5; 
+        }
+    }
+    
 
 
 
@@ -209,7 +234,7 @@ a{
     height: 8.06px;
     left: 0px;
     top: 0px;
-    background: #407C9D;
+    background: #323B5A;
 }
 .Experiencias{
     position: initial;
@@ -233,7 +258,7 @@ a{
     margin: 0px;
 }
 .Contenedor-Exp{
-    background-color: #407C9D;
+    background-color: #323B5A;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -250,13 +275,13 @@ a{
 .cuadro_I2T{
     width: 1118px;
     height: 200px;
-    background-color: #407C9D;
+    background-color: #323B5A;
     border-radius: 20px;
 }
 .cuadro_2D{
     width: 1118px;
     height: 151px;
-    background-color: #407C9D;
+    background-color: #323B5A;
     border-radius: 20px;
 }
 .Portafolio-work1{
@@ -300,7 +325,7 @@ a{
     height: 8.06px;
     left: 0px;
     top: 0px;
-    background: #407C9D;
+    background: #323B5A;
 }
 .Tecnologias{
     position: initial;
@@ -336,7 +361,7 @@ a{
     height: 8.06px;
     left: 0px;
     top: 0px;
-    background: #407C9D;
+    background: #323b5a;
 }
 .Proyectos{
     position: initial;
@@ -352,7 +377,7 @@ a{
 .Pre-Proyecto{
     width: 200px;
     height: 250px;
-    background-color: #407C9D;
+    background-color: #323B5A;
     border-radius: 15px;
     text-align: center;
     color: white;
@@ -372,14 +397,14 @@ a{
     position: relative;
     width: 1122px;
     height: 8px;
-    background: #407C9D;
+    background: #323B5A;
     margin: 40px 0px;
 }
 .Contenedor-contacto{
    position: initial;
 }
 .Contacto{
-    background-color: #407C9D;
+    background-color: #323B5A;
     position: absolute;
     width: 1122px;
     height: 400px;
@@ -398,11 +423,10 @@ a{
         padding: 60px 20px 20px 20px;
         display: flex;
         flex-direction: column;
-        height: 410px;
         justify-content: space-evenly;
     }
     .Cuadro_contacto{
-        background-color: #407C9D;
+        background-color: #323B5A;
         border-radius: 30px;
         display: flex;
         justify-content: space-between;
@@ -466,7 +490,7 @@ a{
         /*Cuadro De Mensaje*/
         .Cuadro_Mensaje{
             width: 400px;
-            height: 150px;
+            height: 200px;
             position: initial;
             background-color: #ffffff;
             border-radius: 20px;
@@ -484,17 +508,19 @@ a{
 
             /*Boton Enviar*/
             .Enviar{
-                height: 40px;
+                height: 30px;
                 width: 150px;
                 position: initial;
-                border-radius: 30px;
-                background-color: #608397;
+                border-radius: 10px;
+                color: white;
+                background-color: #9768BB;
                 margin: 0px 0px 0px 250px;
             }
             @media (hover: hover){
             .Enviar:hover{
                 color: rgb(0, 0, 0);
-                background-color: #86b2cc; 
+                background-color: #15a5a5; 
+
                 }
             }
 
@@ -512,9 +538,25 @@ a{
     width: 100%;
     height: 200px;
     position: relative;
-    background-color: #407C9D;
+    background-color: #323B5A;
     color: white;
     text-align: center;
     padding: 10px;
     margin: 50px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Logo_Footer{
+    height: 100px;
+}
+
+.Iconos_F{
+    height: 30px;
+}
+.Barra_6{
+    height: 120px;
+    width: 2px;
+    background-color: #9768BB;
+    margin: 20px;
 }

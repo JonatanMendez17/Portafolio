@@ -1,3 +1,10 @@
+Lista de desarrollos:
+_Agregar nuevi color y logo 
+_Hover
+_Java script
+_Responsive
+_Estilo
+
 1_Tienda Online o Pagina de Cursos 
 2_Proyecto 3D
 3_Juego del Tateti
