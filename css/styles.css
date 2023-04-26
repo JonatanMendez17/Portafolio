@@ -71,14 +71,16 @@ h4{
 a{
     color: #ffffff;
     font-size: 20px;
-    transition: all 0,5s ease-out;
+    transition: 0.3s ease;
     text-decoration: none;
 }
     a:hover {
-        color: #9768BB
+        color: #9768BB;
+        transition: all 0.3s ease-out;
+        transform: scale(1.1);        
     }
 
-
+   
 
 
 
@@ -133,27 +135,23 @@ a{
         position: relative;
         margin: 20px 0px 0px 440px;
     }
-     .i_Linkedin{
+     .Icono-P{
                 width: 50px;
                 height: 50px;
                 position: initial;
-    }
-    .i_Correo{
-                width: 50px;
-                height: 50px;
-                position: initial;
-    }
-    .i_git{
-                width: 50px;
-                height: 50px;
-                position: initial;
-    }
-    .i_whatsapp{
-                width: 50px;
-                height: 50px;
-                position: initial;
-    }
+                transition: all .4s ease-in-out;;
 
+
+    }
+  
+    @media (hover: hover){
+        .Icono-P:hover{
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            transform: scale(1.2);
+            transition: all .4s ease-in-out;;
+            }
+        }
 
 
 
@@ -204,17 +202,23 @@ a{
     text-align: center;
 }
 .Des-cv{
-    height: 30px;
+    height: 40px;
     width: 150px;
     border-radius: 10px;
     background-color: #9768BB;
     color: #ffffff;
     margin: 10px 0px 0px 0px;
+    border: none;
+    transition: .3s ease; 
 }   
 @media (hover: hover){
     .Des-cv:hover{
         color: rgb(0, 0, 0);
         background-color: #15a5a5; 
+        font-weight: bold;
+        transform: scale(1.1);
+        box-shadow: -1px 2px 20px -1px #15a5a567;
+        transition: all .3s ease-in-out;;
         }
     }
     
@@ -331,12 +335,48 @@ a{
     position: initial;
     padding: 50px 0px;
 }
-.Iconos{
+.T-H{
+    display: flex;
+    /* height: 140px; */
+    /* width: 1000px; */
+    /* grid-template-columns: repeat(7, 140px); */
+    /* grid-template-rows: 10rem 8rem 10rem; */
+    column-gap: -5rem;
+    justify-content: space-around;
+    /* background-color: #323b5a; */
+    border-radius: 15px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.Iconos-T{
     display: grid;
-    grid-template-columns: repeat(8, 140px);
+    height: 150px;
+    width: 1000px;
+    grid-template-columns: repeat(7, 130px);
+    grid-template-rows: 10rem 8rem 9rem;
+    column-gap: -5rem;
+    justify-content: center;
+    background-color: #323b5a;
+    border-radius: 70px;
+    margin: 15px;
+    flex-wrap: wrap;
+    color: white;
+}
+
+
+.Iconos-H{
+    display: grid;
+    height: 300px;
+    width: 1000px;
+    grid-template-columns: repeat(6, 155px);
     grid-template-rows: 10rem 8rem 10rem;
     column-gap: -5rem;
     justify-content: center;
+    background-color: #323b5a;
+    border-radius: 50px;
+    flex-wrap: wrap;
+    color: white;
 }
 .Diseño{
     background-color: var(--eerie-black);
@@ -444,6 +484,7 @@ a{
         /*Cuadro De Nombre*/
         .Cuadro_Nombre{
             width: 400px;
+            height: 30px;
             position: initial;
             background-color: #ffffff;
             border-radius: 20px;
@@ -456,7 +497,11 @@ a{
             /* left: 684px; */
             color: #ffffff;
         }
-
+        form input{
+            padding: 5px 10px;
+            letter-spacing: 1px;
+            font-family: var(--font);
+        }
         /*Cuadro De Usuario*/
         .Usuario{
             /* height: 10px; */
@@ -469,6 +514,7 @@ a{
         /*Cuadro De Correo*/
         .Cuadro_Correo{
             width: 400px;
+            height: 30px;
             position: initial;
             background-color: #ffffff;
             border-radius: 20px;
@@ -505,25 +551,38 @@ a{
             color: rgb(172, 172, 172);
             padding: 0px 10px;
         }
+        form textarea{
+            padding: 15px 10px;
+            letter-spacing: 1px;
+            font-family: var(--font);
+        }
 
             /*Boton Enviar*/
             .Enviar{
-                height: 30px;
+                height: 40px;
                 width: 150px;
                 position: initial;
                 border-radius: 10px;
                 color: white;
                 background-color: #9768BB;
-                margin: 0px 0px 0px 250px;
+                margin: 0px 0px 0px 265px;
+                border: none;
+                transition: .3s ease;                
             }
             @media (hover: hover){
             .Enviar:hover{
-                color: rgb(0, 0, 0);
                 background-color: #15a5a5; 
-
+                color: rgb(0, 0, 0);
+                font-weight: bold;
+                transform: scale(1.1);
+                box-shadow: -1px 2px 20px -1px #15a5a567;
+                transition: all .3s ease-in-out;;
+                
                 }
-            }
+            } 
+           
 
+             
 
 
 
