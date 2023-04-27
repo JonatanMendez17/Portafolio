@@ -1,6 +1,5 @@
-Lista de desarrollos:
-_Agregar nuevi color y logo 
 _Hover
+Lista de desarrollos:
 _Java script
 _Responsive
 _Estilo
@@ -15,3 +14,5 @@ _Estilo
 8_App de celular
 9_ahorcado
 10_Encriptador
+
+En el alma se encuntra las huellas psikikas, esas huellas son creencias , la persona de doble de animo es una persona que duda de la creencia de amor de Dios , para con ellos 

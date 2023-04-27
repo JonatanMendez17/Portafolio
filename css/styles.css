@@ -50,7 +50,7 @@ h4{
 .Contenedor-Menu{
     position: fixed;
     background-color: #323B5A;
-    height: 35px;
+    height: 40px;
     width: 600px;
     text-align: center;
     border-radius: 20px;
@@ -58,7 +58,7 @@ h4{
     margin: 40px 0px 0px 500px;
 }
 .Menu{
-    height: 34px;
+    height: 40px;
     width: 600px;
     position: initial;
     display: flex;
@@ -106,18 +106,19 @@ a{
 .Img_Portada{
     width: 100%;
     min-width: 1200px;
-    height: 100%;
-    position: absolute;
+    position: fixed;
+    z-index: -1;
 }
 .hola-soy{
     position: relative;
     color: white;
     text-shadow: 0px 0px 11px rgb(0, 0, 0);
-    margin: 0px 559px 0px 0px;}
+    margin: 0px 660px 0px 0px;
+}
 .Jonatan-Mendez{
     position: relative;
     color: white;
-    font-size: 85px;
+    font-size: 100px;
     text-shadow: 0px 0px 11px rgb(0, 0, 0);
     margin: auto;
 
@@ -127,13 +128,13 @@ a{
     color: rgb(255, 255, 255);
     font-size: 21px;
     text-shadow: 0px 0px 11px rgb(0, 0, 0);
-    margin: 0px 10px 0px 0px;
+    margin: 0px 120px 0px 0px;
 }
 
     /*Redes De Contacto*/
     .iconos-redes{
         position: relative;
-        margin: 20px 0px 0px 440px;
+        margin: 30px 0px 0px 550px;
     }
      .Icono-P{
                 width: 50px;
@@ -162,6 +163,24 @@ a{
 
 
 /*SOBRE MI*/
+.Tarjeta-Pres{
+    background-color: #ffffffd3;
+    height: 400px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: all .5s ease; 
+}
+@media (hover: hover){
+    .Tarjeta-Pres:hover{
+        /* color: rgb(0, 0, 0); */
+        /* background-color: #15a5a5;  */
+        /* font-weight: bold; */
+        transform: scale(1.05);
+        /* box-shadow: -1px 2px 20px -1px #15a5a567; */
+        transition: all .5s ease-in-out;;
+        }
+    }
+
 .Contenedor-SobreMi{
     display: flex;
     flex-direction: column;
@@ -170,6 +189,7 @@ a{
     padding: 50px 0px 0px 0px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 100px;
     max-width: 1200px;
 }
 .Barra_1{
@@ -177,22 +197,26 @@ a{
     width: 1122px;
     height: 8.06px;
     background: #323B5A;
+    border-top-right-radius:15px ;
+    border-top-left-radius:15px ;
+
 }
 .Sobre-Mi{
     position: relative;
     width: 1122px;
-    height: 300px;
+    height: 350px;
     display: flex;
     flex-direction: row-reverse;
-    /* padding: 3rem; */
     align-items: center;
     justify-content: center;
 }
+.Contenedor-Info{
+    padding: 0px 10px 0px 15px;}
 .Mi-Foto{
     width: 250px;
     max-width: 208px;
     border-radius: 100%;
-    padding: 49px 0px 0px 0px;
+    padding: 49px 15px 0px 0px;
 }
 .Texto_SobreMi{
     text-align: justify;
@@ -235,10 +259,14 @@ a{
 .Barra_2{
     position: initial;
     width: 1122px;
-    height: 8.06px;
-    left: 0px;
-    top: 0px;
+    height: 40px;
+    border-radius: 15px;
     background: #323B5A;
+    color: white;
+    display: flex;
+    align-content: flex-end;
+    align-items: center;
+    padding: 0px 15px;
 }
 .Experiencias{
     position: initial;
@@ -262,7 +290,7 @@ a{
     margin: 0px;
 }
 .Contenedor-Exp{
-    background-color: #323B5A;
+    background-color: #323b5ad3;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -282,6 +310,7 @@ a{
     background-color: #323B5A;
     border-radius: 20px;
 }
+
 .cuadro_2D{
     width: 1118px;
     height: 151px;
@@ -433,13 +462,13 @@ a{
 
 
 /*CONTACTO*/
-.Barra_5{
+/* .Barra_5{
     position: relative;
     width: 1122px;
     height: 8px;
     background: #323B5A;
     margin: 40px 0px;
-}
+} */
 .Contenedor-contacto{
    position: initial;
 }
@@ -466,14 +495,14 @@ a{
         justify-content: space-evenly;
     }
     .Cuadro_contacto{
-        background-color: #323B5A;
+        background-color: #323b5ad3;
         border-radius: 30px;
         display: flex;
         justify-content: space-between;
         flex-direction: row;
         flex-wrap: nowrap;
         padding: 15px;
-        margin: 30px 0px 0px 0px;
+        margin: 100px 0px 0px 0px;
     }
     .Titulo_Contacto{
             color: #ffffff;
@@ -583,7 +612,13 @@ a{
            
 
              
-
+/* .Triangulo{
+    width: 0;
+    height: 0;
+    border-top: 144px solid transparent;
+    border-left: 1139px solid #323B5A;
+    position: absolute;
+} */
 
 
 
@@ -601,7 +636,7 @@ a{
     color: white;
     text-align: center;
     padding: 10px;
-    margin: 50px 0px;
+    margin: 200px 0px;
     display: flex;
     align-items: center;
     justify-content: center;
