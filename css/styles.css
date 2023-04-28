@@ -145,14 +145,15 @@ a{
 
     }
   
-    @media (hover: hover){
-        .Icono-P:hover{
-            color: rgb(0, 0, 0);
-            font-weight: bold;
-            transform: scale(1.2);
-            transition: all .4s ease-in-out;;
+        @media (hover: hover){
+            .Icono-P:hover{
+                color: rgb(0, 0, 0);
+                font-weight: bold;
+                transform: scale(1.2);
+                transition: all .4s ease-in-out;;
+                }
             }
-        }
+
 
 
 
@@ -170,16 +171,16 @@ a{
     border-bottom-right-radius: 20px;
     transition: all .5s ease; 
 }
-@media (hover: hover){
-    .Tarjeta-Pres:hover{
-        /* color: rgb(0, 0, 0); */
-        /* background-color: #15a5a5;  */
-        /* font-weight: bold; */
-        transform: scale(1.05);
-        /* box-shadow: -1px 2px 20px -1px #15a5a567; */
-        transition: all .5s ease-in-out;;
+    @media (hover: hover){
+        .Tarjeta-Pres:hover{
+            /* color: rgb(0, 0, 0); */
+            /* background-color: #15a5a5;  */
+            /* font-weight: bold; */
+            transform: scale(1.05);
+            /* box-shadow: -1px 2px 20px -1px #15a5a567; */
+            transition: all .5s ease-in-out;;
+            }
         }
-    }
 
 .Contenedor-SobreMi{
     display: flex;
@@ -211,7 +212,8 @@ a{
     justify-content: center;
 }
 .Contenedor-Info{
-    padding: 0px 10px 0px 15px;}
+    padding: 0px 10px 0px 15px;
+}
 .Mi-Foto{
     width: 250px;
     max-width: 208px;
@@ -235,16 +237,16 @@ a{
     border: none;
     transition: .3s ease; 
 }   
-@media (hover: hover){
-    .Des-cv:hover{
-        color: rgb(0, 0, 0);
-        background-color: #15a5a5; 
-        font-weight: bold;
-        transform: scale(1.1);
-        box-shadow: -1px 2px 20px -1px #15a5a567;
-        transition: all .3s ease-in-out;;
+    @media (hover: hover){
+        .Des-cv:hover{
+            color: rgb(0, 0, 0);
+            background-color: #15a5a5; 
+            font-weight: bold;
+            transform: scale(1.1);
+            box-shadow: -1px 2px 20px -1px #15a5a567;
+            transition: all .3s ease-in-out;;
+            }
         }
-    }
     
 
 
@@ -310,7 +312,6 @@ a{
     background-color: #323B5A;
     border-radius: 20px;
 }
-
 .cuadro_2D{
     width: 1118px;
     height: 151px;
@@ -377,7 +378,6 @@ a{
     flex-direction: row;
     flex-wrap: wrap;
 }
-
 .Iconos-T{
     display: grid;
     height: 150px;
@@ -392,8 +392,6 @@ a{
     flex-wrap: wrap;
     color: white;
 }
-
-
 .Iconos-H{
     display: grid;
     height: 300px;
@@ -462,13 +460,6 @@ a{
 
 
 /*CONTACTO*/
-/* .Barra_5{
-    position: relative;
-    width: 1122px;
-    height: 8px;
-    background: #323B5A;
-    margin: 40px 0px;
-} */
 .Contenedor-contacto{
    position: initial;
 }
@@ -612,14 +603,6 @@ a{
            
 
              
-/* .Triangulo{
-    width: 0;
-    height: 0;
-    border-top: 144px solid transparent;
-    border-left: 1139px solid #323B5A;
-    position: absolute;
-} */
-
 
 
 
@@ -644,7 +627,6 @@ a{
 .Logo_Footer{
     height: 100px;
 }
-
 .Iconos_F{
     height: 30px;
 }
