@@ -8,11 +8,17 @@ html{
     box-sizing: border-box;
     font-family: var(--font);
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 body{
+    width: 100%;
+    height: 3318px;
     margin: 0%;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 P{
@@ -23,22 +29,12 @@ P{
     opacity: 0,75;
 }
    
-img{
-       max-width: 100%;
-       height: 100%;
-       position: absolute;
-       top: -45px;
-}
-   
 .box-shadow-1{
        box-shadow: 0.313rem 0.313rem 0.313rem rgba(0, 0, 0, 0.25);
 }
 
-h3{
-    position: relative;
-    top: 190px;
-    left: 50px;
-    color: white;
+h4{
+    margin: 0px;
 }
 
 
@@ -51,43 +47,41 @@ h3{
 
 
 /*MENU NAVEGACION*/
-.header{
+.Contenedor-Menu{
     position: fixed;
-    height: 26.67px;
-    left: 621px;
-    right: 175px;
-    top: 69px;
+    background-color: #323B5A;
+    height: 40px;
+    width: 600px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 0px 1px white; 
+    margin: 40px 0px 0px 500px;
 }
-.Contenedor{
-    margin: auto;
-    margin-right: auto;
-    background-color: #407C9D;
-    height: 35px;
-    width: 580px;
-    text-align: center;
-    border-radius: 14px;
-    box-shadow: 6px 4px 18px 1px;
-}  
 .Menu{
-    height: 34px;
-    width: 565px;
-    position: fixed;
-    top: 70px;
-    left: 628px;
-    right: 20px;
-    bottom: 0px;
-    text-align: center;
+    height: 40px;
+    width: 600px;
+    position: initial;
     display: flex;
-    align-items: center;
     justify-content: space-evenly;
-
+    align-items: center;
+}
+.Logo{
+    height: 30px;
 }
 a{
     color: #ffffff;
     font-size: 20px;
-    transition: all 0,5s ease-out;
+    transition: 0.3s ease;
     text-decoration: none;
 }
+    a:hover {
+        color: #9768BB;
+        transition: all 0.3s ease-out;
+        transform: scale(1.1);        
+    }
+
+   
+
 
 
 
@@ -96,81 +90,69 @@ a{
 
 
 /*PORTADA*/
-.Portada{
-    width: 50px;
-    height: 50px;
+.Cuadro-Titulo{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+}
+.Titulo-Principal{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .Img_Portada{
     width: 100%;
-    height: 746px;
-    position: absolute;
-    top: 0px;
+    min-width: 1200px;
+    position: fixed;
+    z-index: -1;
 }
 .hola-soy{
-    position: absolute;
-    top: 207px;
-    right: 937px;
+    position: relative;
     color: white;
-    font-size: 25px;
-    text-align: center;
     text-shadow: 0px 0px 11px rgb(0, 0, 0);
+    margin: 0px 660px 0px 0px;
 }
 .Jonatan-Mendez{
-    position: absolute;
-    top: 197px;
-    right: 388px;
+    position: relative;
     color: white;
-    font-size: 85px;
-    text-align: center;
+    font-size: 100px;
     text-shadow: 0px 0px 11px rgb(0, 0, 0);
+    margin: auto;
 
 }
 .Info{
-    position: absolute;
-    top: 326px;
-    left: 309px;
-    right: 380px;
+    position: relative;
     color: rgb(255, 255, 255);
     font-size: 21px;
     text-shadow: 0px 0px 11px rgb(0, 0, 0);
+    margin: 0px 120px 0px 0px;
 }
 
     /*Redes De Contacto*/
     .iconos-redes{
-        width: 243px;
-        height: 65px;
-        background-color: #f8f8f870;
-        border-radius: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        position: absolute;
-        left: 725px;
-        bottom: 183px;
+        position: relative;
+        margin: 30px 0px 0px 550px;
+    }
+     .Icono-P{
+                width: 50px;
+                height: 50px;
+                position: initial;
+                transition: all .4s ease-in-out;;
 
 
     }
-     .i_Linkedin{
-                width: 50px;
-                height: 50px;
-                position: initial;
-    }
-    .i_Correo{
-                width: 50px;
-                height: 50px;
-                position: initial;
-    }
-    .i_git{
-                width: 50px;
-                height: 50px;
-                position: initial;
-    }
-    .i_whatsapp{
-                width: 50px;
-                height: 50px;
-                position: initial;
-    }
-
+  
+    @media (hover: hover){
+        .Icono-P:hover{
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            transform: scale(1.2);
+            transition: all .4s ease-in-out;;
+            }
+        }
 
 
 
@@ -181,34 +163,89 @@ a{
 
 
 /*SOBRE MI*/
+.Tarjeta-Pres{
+    background-color: #ffffffd3;
+    height: 400px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: all .5s ease; 
+}
+@media (hover: hover){
+    .Tarjeta-Pres:hover{
+        /* color: rgb(0, 0, 0); */
+        /* background-color: #15a5a5;  */
+        /* font-weight: bold; */
+        transform: scale(1.05);
+        /* box-shadow: -1px 2px 20px -1px #15a5a567; */
+        transition: all .5s ease-in-out;;
+        }
+    }
+
+.Contenedor-SobreMi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0px 0px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    max-width: 1200px;
+}
 .Barra_1{
-    position: absolute;
+    position: initial;
     width: 1122px;
     height: 8.06px;
-    left: 0px;
-    top: 0px;
-    background: #407C9D;
+    background: #323B5A;
+    border-top-right-radius:15px ;
+    border-top-left-radius:15px ;
+
 }
 .Sobre-Mi{
-    position: absolute;
+    position: relative;
     width: 1122px;
-    height: 300px;
-    left: 80px;
-    top: 798.64px;
+    height: 350px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
 }
+.Contenedor-Info{
+    padding: 0px 10px 0px 15px;}
 .Mi-Foto{
     width: 250px;
-    height: 250px;
-    position: absolute;
-    top: 29px;
-    left: 843px;
+    max-width: 208px;
     border-radius: 100%;
+    padding: 49px 15px 0px 0px;
 }
 .Texto_SobreMi{
-    width: 50px;
-    width: 800px;
+    text-align: justify;
+    padding: 0px 20px 0px 0px;
 }
-
+.Boton-imagen{
+    text-align: center;
+}
+.Des-cv{
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: #9768BB;
+    color: #ffffff;
+    margin: 10px 0px 0px 0px;
+    border: none;
+    transition: .3s ease; 
+}   
+@media (hover: hover){
+    .Des-cv:hover{
+        color: rgb(0, 0, 0);
+        background-color: #15a5a5; 
+        font-weight: bold;
+        transform: scale(1.1);
+        box-shadow: -1px 2px 20px -1px #15a5a567;
+        transition: all .3s ease-in-out;;
+        }
+    }
+    
 
 
 
@@ -220,51 +257,89 @@ a{
 
 /*EXPERIENCIAS*/
 .Barra_2{
-    position: absolute;
+    position: initial;
     width: 1122px;
-    height: 8.06px;
-    left: 0px;
-    top: 0px;
-    background: #407C9D;
+    height: 40px;
+    border-radius: 15px;
+    background: #323B5A;
+    color: white;
+    display: flex;
+    align-content: flex-end;
+    align-items: center;
+    padding: 0px 15px;
 }
 .Experiencias{
-    position: absolute;
+    position: initial;
     width: 1122px;
-    height: 550px;
-    left: 80px;
-    top: 1100px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 50px 0px;
 }
 .Titulo_exp{
-    position: relative;
-    top: 13px;
-    left: 55px;
+    position: initial;
     color: white;
+    padding: 10px;
+    margin: 0px;
 }
 .Texto_exp{
-    width: 1076px;
     text-align: justify;
     position: relative;
-    top: 1px;
-    left: 20px;
     color: white;
+    margin: 0px;
 }
-.cuadro_indra{
-    width: 1118px;
-    height: 151px;
-    background-color: #407C9D;
+.Contenedor-Exp{
+    background-color: #323b5ad3;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin: 10px 0px 10px 0px;
+}
+.Sub-Titulo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
 }
 .cuadro_I2T{
     width: 1118px;
     height: 200px;
-    background-color: #407C9D;
+    background-color: #323B5A;
     border-radius: 20px;
 }
+
 .cuadro_2D{
     width: 1118px;
     height: 151px;
-    background-color: #407C9D;
+    background-color: #323B5A;
     border-radius: 20px;
+}
+.Portafolio-work1{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    /* top: 77px; */
+    /* left: 19px; */
+    /* display: grid;*/
+}
+.Portafolio-work2{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 248px;
+    left: 19px;
+    display: grid;
+}
+.Portafolio-work3{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 466px;
+    left: 19px;
+    display: grid;
 }
 
 
@@ -276,45 +351,68 @@ a{
 
 
 
-/*TECNOPLOGIA*/
+/*TECNOLOGIA*/
 .Barra_3{
-    position: absolute;
+    position: initial;
     width: 1122px;
     height: 8.06px;
     left: 0px;
     top: 0px;
-    background: #407C9D;
+    background: #323B5A;
 }
 .Tecnologias{
-    position: absolute;
-    width: 1122px;
-    height: 400px;
-    left: 80px;
-    top: 1750px;
+    position: initial;
+    padding: 50px 0px;
 }
-.Iconos{
-    display: grid;
-    grid-gap: 0px;
-    grid-template-columns: repeat(8, 140px);
-    grid-template-rows: 8rem 8rem 8rem;
+.T-H{
+    display: flex;
+    /* height: 140px; */
+    /* width: 1000px; */
+    /* grid-template-columns: repeat(7, 140px); */
+    /* grid-template-rows: 10rem 8rem 10rem; */
     column-gap: -5rem;
-    padding: 0;
-    margin-top: 3rem;
+    justify-content: space-around;
+    /* background-color: #323b5a; */
+    border-radius: 15px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.Iconos-T{
+    display: grid;
+    height: 150px;
+    width: 1000px;
+    grid-template-columns: repeat(7, 130px);
+    grid-template-rows: 10rem 8rem 9rem;
+    column-gap: -5rem;
     justify-content: center;
-    align-items: center;
-    justify-items: center;
+    background-color: #323b5a;
+    border-radius: 70px;
+    margin: 15px;
+    flex-wrap: wrap;
+    color: white;
+}
+
+
+.Iconos-H{
+    display: grid;
+    height: 300px;
+    width: 1000px;
+    grid-template-columns: repeat(6, 155px);
+    grid-template-rows: 10rem 8rem 10rem;
+    column-gap: -5rem;
+    justify-content: center;
+    background-color: #323b5a;
+    border-radius: 50px;
+    flex-wrap: wrap;
+    color: white;
 }
 .Diseño{
     background-color: var(--eerie-black);
-    border-radius: 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    filter: saturate(40%);
-    width: 6rem;
-    height: 4rem;
 }
 
 
@@ -328,80 +426,32 @@ a{
 
 /*PROYECTOS*/
 .Barra_4{
-    position: absolute;
-    width: 1122px;
+    position: initial;
     height: 8.06px;
     left: 0px;
     top: 0px;
-    background: #407C9D;
+    background: #323b5a;
 }
 .Proyectos{
-    position: absolute;
-    width: 1122px;
-    height: 400px;
-    left: 80px;
-    top: 2236px;
+    position: initial;
+    padding: 20px 0px;
 }
 .Marco_proyecto{
     display: grid;
-    grid-gap: 1px;
     grid-template-columns: repeat(4, 280px);
-    grid-template-rows: 8rem 9rem;
     column-gap: -5rem;
-    padding: 0;
-    margin-top: 3rem;
-    justify-content: center;
-    align-items: start;
+ 
     justify-items: center;
 }
-.Proyecto_1{
+.Pre-Proyecto{
     width: 200px;
     height: 250px;
-    background-color: #407C9D;
+    background-color: #323B5A;
     border-radius: 15px;
+    text-align: center;
+    color: white;
 }
-.Proyecto_2{
-    width: 200px;
-    height: 250px;
-    background-color: #407C9D;
-    border-radius: 15px;
-}
-.Proyecto_3{
-    width: 200px;
-    height: 250px;
-    background-color: #407C9D;
-    border-radius: 15px;
-}
-.Proyecto_4{
-    width: 200px;
-    height: 250px;
-    background-color: #407C9D;
-    border-radius: 15px;
-}
-.Portafolio-work1{
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    top: 77px;
-    left: 19px;
-    display: grid;s
-}
-.Portafolio-work2{
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    top: 248px;
-    left: 19px;
-    display: grid;s
-}
-.Portafolio-work3{
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    top: 466px;
-    left: 19px;
-    display: grid;s
-}
+
 
 
 
@@ -412,20 +462,18 @@ a{
 
 
 /*CONTACTO*/
-.Barra_5{
-    position: absolute;
+/* .Barra_5{
+    position: relative;
     width: 1122px;
-    height: 8.06px;
-    left: 76px;
-    top: 2681px;
-    background: #407C9D;
+    height: 8px;
+    background: #323B5A;
+    margin: 40px 0px;
+} */
+.Contenedor-contacto{
+   position: initial;
 }
-.Cuadro_contacto_general{
-    width: 100px;
-    height: 150px;
-    }
 .Contacto{
-    background-color: #407C9D;
+    background-color: #323B5A;
     position: absolute;
     width: 1122px;
     height: 400px;
@@ -433,117 +481,144 @@ a{
     top: 2700px;
     border-radius: 30px;
 }
+.Img-Contacto{
+    width: 550px;
+    height: 330px;
+    padding: 50px 50px;
+}
 
     /*Cuadro De Contacto*/
+    .Contenedor-Accion{
+        padding: 60px 20px 20px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
     .Cuadro_contacto{
-            background-color: #407C9D;
-            position: absolute;
-            width: 1122px;
-            height: 444px;
-            left: 80px;
-            top: 2726px;
-            border-radius: 30px;
+        background-color: #323b5ad3;
+        border-radius: 30px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding: 15px;
+        margin: 100px 0px 0px 0px;
     }
     .Titulo_Contacto{
             color: #ffffff;
-            position: absolute;
-            left: 20px;
+            position: initial;
+            margin: 0px;
     }
 
         /*Cuadro De Nombre*/
         .Cuadro_Nombre{
-                width: 383px;
-                height: 35px;
-                position: absolute;
-                top: 115px;
-                left: 683px;
-                background-color: #ffffff;
-                border-radius: 10px;
+            width: 400px;
+            height: 30px;
+            position: initial;
+            background-color: #ffffff;
+            border-radius: 20px;
+        
         }
         .Nombre_Contact{
-                height: 10px;
-                position: absolute;
-                top: 74px;
-                left: 684px;
-                color: #ffffff;
+            /* height: 10px; */
+            position: initial;
+            /* top: 74px; */
+            /* left: 684px; */
+            color: #ffffff;
         }
-
+        form input{
+            padding: 5px 10px;
+            letter-spacing: 1px;
+            font-family: var(--font);
+        }
         /*Cuadro De Usuario*/
         .Usuario{
-            height: 10px;
-            position: absolute;
-            left: 5px;
-            top: -7px;
+            /* height: 10px; */
+            position: initial;
             color: rgb(172, 172, 172);
+            margin: 0px;
+            padding: 10px;
         }
 
         /*Cuadro De Correo*/
         .Cuadro_Correo{
-            width: 383px;
-            height: 35px;
-            position: absolute;
-            top: 185px;
-            left: 683px;
+            width: 400px;
+            height: 30px;
+            position: initial;
             background-color: #ffffff;
-            border-radius: 10px;
+            border-radius: 20px;
         }
         .Correo{
-            height: 30px;
-            position: absolute;
-            left: 5px;
-            top: -7px;
-            color: rgb(172, 172, 172);
+        position: initial;
+        color: rgb(172, 172, 172);
+        margin: 0px;
+        padding: 10px;
         }
         .Nombre_Correo{
-            height: 20px;
-            position: absolute;
-            top: 144px;
-            left: 684px;
-            color: #ffffff;
+                /* height: 20px; */
+                position: initial;
+                /* top: 144px; */
+                /* left: 684px; */
+                color: #ffffff;
         }
         
         /*Cuadro De Mensaje*/
         .Cuadro_Mensaje{
-            width: 383px;
-            height: 121px;
-            position: absolute;
-            top: 252px;
-            left: 683px;
+            width: 400px;
+            height: 200px;
+            position: initial;
             background-color: #ffffff;
-            border-radius: 10px;
+            border-radius: 20px;
         }
         .Mensaje{
-            height: 30px;
-            position: absolute;
-            top: 212px;
-            left: 684px;
+            position: initial;
             color: #ffffff;
         }
         .Texto_mensaje{
             height: 30px;
-            position: absolute;
-            left: 5px;
-            top: -7px;
+            position: initial;
             color: rgb(172, 172, 172);
+            padding: 0px 10px;
+        }
+        form textarea{
+            padding: 15px 10px;
+            letter-spacing: 1px;
+            font-family: var(--font);
         }
 
             /*Boton Enviar*/
             .Enviar{
-            height: 34px;
-            width: 143px;
-            position: absolute;
-            top: 390px;
-            left: 925px;
-            border-radius: 10px; 
-            background-color: #608397; 
+                height: 40px;
+                width: 150px;
+                position: initial;
+                border-radius: 10px;
+                color: white;
+                background-color: #9768BB;
+                margin: 0px 0px 0px 265px;
+                border: none;
+                transition: .3s ease;                
             }
             @media (hover: hover){
             .Enviar:hover{
+                background-color: #15a5a5; 
                 color: rgb(0, 0, 0);
-                background-color: #86b2cc; 
+                font-weight: bold;
+                transform: scale(1.1);
+                box-shadow: -1px 2px 20px -1px #15a5a567;
+                transition: all .3s ease-in-out;;
+                
                 }
-            }
+            } 
+           
 
+             
+/* .Triangulo{
+    width: 0;
+    height: 0;
+    border-top: 144px solid transparent;
+    border-left: 1139px solid #323B5A;
+    position: absolute;
+} */
 
 
 
@@ -555,10 +630,27 @@ a{
 /*FOOTER - PIE DE PAGINA*/
 .footer{
     width: 100%;
-    height: 80px;
+    height: 200px;
     position: relative;
-    top: 3000px;
-    background-color: rgba(0, 0, 0, 0.384);
+    background-color: #323B5A;
+    color: white;
     text-align: center;
-    padding-top: 20px;  
-    }
+    padding: 10px;
+    margin: 200px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Logo_Footer{
+    height: 100px;
+}
+
+.Iconos_F{
+    height: 30px;
+}
+.Barra_6{
+    height: 120px;
+    width: 2px;
+    background-color: #9768BB;
+    margin: 20px;
+}
