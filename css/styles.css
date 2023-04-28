@@ -332,9 +332,6 @@ a{
     width: 30px;
     height: 30px;
     position: relative;
-    /* top: 77px; */
-    /* left: 19px; */
-    /* display: grid;*/
 }
 .Portafolio-work2{
     width: 30px;
@@ -363,44 +360,44 @@ a{
 
 
 /*TECNOLOGIA*/
-.Barra_3{
+.Tarj-tecno{
     position: initial;
-    width: 1122px;
-    height: 8.06px;
-    left: 0px;
-    top: 0px;
-    background: #323B5A;
+    width: 1122px;;
+    height: 60px;
+    background-color: #ffffffd3;
+    padding: 5px;
 }
 .Tecnologias{
     position: initial;
     padding: 50px 0px;
 }
+
+.Carrucel-Tecno{
+    background-color: #323b5a;
+    border-radius: 100px;
+    color: white;
+}
 .T-H{
     display: flex;
-    /* height: 140px; */
-    /* width: 1000px; */
-    /* grid-template-columns: repeat(7, 140px); */
-    /* grid-template-rows: 10rem 8rem 10rem; */
     column-gap: -5rem;
     justify-content: space-around;
-    /* background-color: #323b5a; */
     border-radius: 15px;
     flex-direction: row;
     flex-wrap: wrap;
 }
+.Tit-tecno{
+    color: white;
+    padding: 10px 0px 10px 60px ;
+    margin: 0px;
+}
 .Iconos-T{
     display: grid;
-    height: 150px;
-    width: 1000px;
-    grid-template-columns: repeat(7, 130px);
-    grid-template-rows: 10rem 8rem 9rem;
+    height: 145px;
+    grid-template-columns: repeat(7, 150px);
     column-gap: -5rem;
     justify-content: center;
-    background-color: #323b5a;
-    border-radius: 70px;
-    margin: 15px;
-    flex-wrap: wrap;
-    color: white;
+    filter: saturate(0.4);
+    align-items: start;
 }
 .Iconos-H{
     display: grid;
