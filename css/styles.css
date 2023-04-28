@@ -111,24 +111,36 @@ a{
 }
 .hola-soy{
     position: relative;
-    color: white;
-    text-shadow: 0px 0px 11px rgb(0, 0, 0);
     margin: 0px 660px 0px 0px;
+    text-shadow: 4px 3px 3px black;
+    color: #ffffff;
+    text-shadow: 0px 0px 20px rgb(0, 0, 0)
+
 }
 .Jonatan-Mendez{
     position: relative;
     color: white;
     font-size: 100px;
-    text-shadow: 0px 0px 11px rgb(0, 0, 0);
     margin: auto;
+    text-shadow: 0px 1px 20px black;
 
+}
+span{
+    -webkit-animation: maquina 5s steps(80) infinite alternate;
+    animation: maquina 5s steps(80) infinite alternate;
+    background: #313552;
+    border-left: 1px solid;
+    position: absolute;
+    right: 0;
+    width: 0;
 }
 .Info{
     position: relative;
-    color: rgb(255, 255, 255);
     font-size: 21px;
-    text-shadow: 0px 0px 11px rgb(0, 0, 0);
     margin: 0px 120px 0px 0px;
+    color: #ffffff;
+    text-shadow: 0px 0px 20px black
+
 }
 
     /*Redes De Contacto*/
@@ -269,7 +281,6 @@ a{
     display: flex;
     align-content: flex-end;
     align-items: center;
-    padding: 0px 15px;
 }
 .Experiencias{
     position: initial;
@@ -278,7 +289,9 @@ a{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding: 50px 0px;
+    /* padding: 50px 0px; */
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 .Titulo_exp{
     position: initial;
@@ -362,19 +375,27 @@ a{
 /*TECNOLOGIA*/
 .Tarj-tecno{
     position: initial;
-    width: 1122px;;
     height: 60px;
     background-color: #ffffffd3;
     padding: 5px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius:20px ;
+    text-align: center;
 }
-.Tecnologias{
-    position: initial;
-    padding: 50px 0px;
+.Tecnologias-herramientas{
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .Carrucel-Tecno{
     background-color: #323b5a;
     border-radius: 100px;
+    color: white;
+    margin: 20px 0px;
+}
+.Carrucel-Herram{
+    background-color: #323b5a;
+    border-radius: 40px;
     color: white;
 }
 .T-H{
@@ -393,33 +414,284 @@ a{
 .Iconos-T{
     display: grid;
     height: 145px;
-    grid-template-columns: repeat(7, 150px);
+    grid-template-columns: repeat(6, 180px);
     column-gap: -5rem;
     justify-content: center;
     filter: saturate(0.4);
     align-items: start;
+    transition: all .5s ease-in-out;;
+
 }
+
 .Iconos-H{
     display: grid;
-    height: 300px;
-    width: 1000px;
-    grid-template-columns: repeat(6, 155px);
-    grid-template-rows: 10rem 8rem 10rem;
+    grid-template-columns: repeat(7, 150px);
+    grid-template-rows: 9rem 9rem;
     column-gap: -5rem;
     justify-content: center;
-    background-color: #323b5a;
-    border-radius: 50px;
-    flex-wrap: wrap;
-    color: white;
+    padding: 0px 0px 20px 0pxv;
+    filter: saturate(0.4);
 }
-.Diseño{
+.Diseño1{
     background-color: var(--eerie-black);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-
+    @media (hover: hover){
+        .Diseño1:hover{
+            transform: scale(1.05);
+            transition: all .5s ease-in-out;
+            }
+        }
+.Diseño2{
+    background-color: var(--eerie-black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+    @media (hover: hover){
+        .Diseño2:hover{
+            transform: scale(1.05);
+            transition: all .5s ease-in-out;;
+            }
+        }
+.Diseño3{
+    background-color: var(--eerie-black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+    @media (hover: hover){
+        .Diseño3:hover{
+            transform: scale(1.05);
+            transition: all .5s ease-in-out;;
+            }
+        }
+.Diseño4{
+    background-color: var(--eerie-black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+    @media (hover: hover){
+        .Diseño4:hover{
+            transform: scale(1.05);
+            transition: all .5s ease-in-out;;
+            }
+        }
+.Diseño5{
+    background-color: var(--eerie-black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+    @media (hover: hover){
+        .Diseño5:hover{
+            transform: scale(1.05);
+            transition: all .5s ease-in-out;;
+            }
+        }
+.Diseño6{
+    background-color: var(--eerie-black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+    @media (hover: hover){
+        .Diseño7:hover{
+            transform: scale(1.05);
+            transition: all .5s ease-in-out;;
+            }
+        }
+.Diseño7{
+    background-color: var(--eerie-black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+    @media (hover: hover){
+        .Diseño8:hover{
+            transform: scale(1.05);
+            transition: all .5s ease-in-out;;
+            }
+        }
+.Diseño8{
+    background-color: var(--eerie-black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+    @media (hover: hover){
+        .Diseño8:hover{
+            transform: scale(1.05);
+            transition: all .5s ease-in-out;;
+            }
+        }
+.Diseño9{
+    background-color: var(--eerie-black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+    @media (hover: hover){
+    .Diseño9:hover{
+        transform: scale(1.05);
+        transition: all .5s ease-in-out;;
+        }
+        }
+.Diseño10{
+    background-color: var(--eerie-black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+    @media (hover: hover){
+        .Diseño10:hover{
+            transform: scale(1.05);
+            transition: all .5s ease-in-out;;
+            }
+        }
+.Diseño11{
+    background-color: var(--eerie-black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+    @media (hover: hover){
+        .Diseño11:hover{
+            transform: scale(1.05);
+            transition: all .5s ease-in-out;;
+            }
+        }
+.Diseño12{
+    background-color: var(--eerie-black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+    @media (hover: hover){
+        .Diseño12:hover{
+            transform: scale(1.05);
+            transition: all .5s ease-in-out;;
+            }
+        }
+.Diseño13{
+    background-color: var(--eerie-black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+    @media (hover: hover){
+        .Diseño13:hover{
+            transform: scale(1.05);
+            transition: all .5s ease-in-out;;
+            }
+        }
+.Diseño14{
+    background-color: var(--eerie-black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+    @media (hover: hover){
+        .Diseño14:hover{
+            transform: scale(1.05);
+            transition: all .5s ease-in-out;;
+            }
+        }
+.Diseño15{
+    background-color: var(--eerie-black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+    @media (hover: hover){
+        .Diseño15:hover{
+            transform: scale(1.05);
+            transition: all .5s ease-in-out;;
+            }
+        }
+.Diseño16{
+    background-color: var(--eerie-black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+    @media (hover: hover){
+        .Diseño16:hover{
+            transform: scale(1.05);
+            transition: all .5s ease-in-out;;
+            }
+        }
+.Diseño17{
+    background-color: var(--eerie-black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+    @media (hover: hover){
+        .Diseño17:hover{
+            transform: scale(1.05);
+            transition: all .5s ease-in-out;;
+            }
+        }
+.Diseño18{
+    background-color: var(--eerie-black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+    @media (hover: hover){
+        .Diseño18:hover{
+            transform: scale(1.05);
+            transition: all .5s ease-in-out;;
+            }
+        }
+.Diseño19{
+    background-color: var(--eerie-black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+    @media (hover: hover){
+        .Diseño19:hover{
+            transform: scale(1.05);
+            transition: all .5s ease-in-out;;
+            }
+        }
+.Diseño20{
+    background-color: var(--eerie-black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@media (hover: hover){
+    .Diseño20:hover{
+        transform: scale(1.05);
+        transition: all .5s ease-in-out;;
+        }
+    }
 
 
 
@@ -440,7 +712,8 @@ a{
 }
 .Proyectos{
     position: initial;
-    padding: 20px 0px;
+    margin-bottom: 100px;
+    margin-top: 100px;
 }
 .Marco_proyecto{
     display: grid;
@@ -474,6 +747,8 @@ a{
 
 
 
+
+/*CONTACTO*/
 .Contenedor-contacto{
    position: initial;
 }
@@ -507,7 +782,8 @@ a{
         flex-direction: column;
         flex-wrap: nowrap;
         padding: 15px;
-        margin: 100px 0px 0px 0px;
+        margin-top: 100px;
+        margin-bottom: 100px;
     }
     .Titulo_Contacto{
             color: #ffffff;
@@ -565,10 +841,7 @@ a{
         padding: 10px;
         }
         .Nombre_Correo{
-                /* height: 20px; */
                 position: initial;
-                /* top: 144px; */
-                /* left: 684px; */
                 color: #ffffff;
         }
         
@@ -632,6 +905,7 @@ a{
 
 
 
+        
 /*FOOTER - PIE DE PAGINA*/
 .footer{
     width: 100%;
